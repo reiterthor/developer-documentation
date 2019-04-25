@@ -22,7 +22,7 @@ In `app/config/layouts.yml` add the following block under the `blocks` key:
 blocks:
     random:
         name: 'Random block'
-        thumbnail: 'assets/images/blocks/random_block.svg'
+        thumbnail: '/assets/images/blocks/random_block.svg'
         views:
             random:
                 template: 'blocks/random/default.html.twig'
