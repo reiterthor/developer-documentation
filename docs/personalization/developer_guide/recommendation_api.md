@@ -18,7 +18,7 @@ To allow a customer to get recommendations based on predefined configurations, s
 
 A recommendation request looks like this:
 
-    GET http://reco.yoochoose.net/api/v2/[customerid]/[userid]/[scenarioid].[extension]?parameter=value&[attribute=attributekey]
+    GET https://reco.yoochoose.net/api/v2/[customerid]/[userid]/[scenarioid].[extension]?parameter=value&[attribute=attributekey]
 
 The embedded parameters `customerid` and `userid` are the same as used in the [Tracking API](tracking_api.md). Additional embedded parameters are described in the following table. 
 
@@ -31,7 +31,7 @@ The embedded parameters `customerid` and `userid` are the same as used in the [T
 
     XML is deprecated and will not be developed further on. It can only be used in the old api (without using `/v2/` in the recommendation URL)
 
-    `GET http://reco.yoochoose.net/api/[customerid]/[userid]/[scenarioid].xml?parameter=value&[attribute=attributekey]`
+    `GET https://reco.yoochoose.net/api/[customerid]/[userid]/[scenarioid].xml?parameter=value&[attribute=attributekey]`
 
 ## Basic Request Parameters
 
@@ -49,7 +49,7 @@ Using additional query string parameters you can customize the recommendation re
 
 An example of the recommendation request: 
 
- `GET http://reco.yoochoose.net/ebl/0000/john.doe/detailpage.json` `?contextitems=123&categorypath=%2FCamera%2FCompact&attribute=title&attribute=deeplink,description&numrecs=8`
+ `GET https://reco.yoochoose.net/ebl/0000/john.doe/detailpage.json` `?contextitems=123&categorypath=%2FCamera%2FCompact&attribute=title&attribute=deeplink,description&numrecs=8`
 
 It fetches 8 recommendations for user john.doe, who is watching item 123 and the category *"/Camera/Compact"* from the scenario with the identifier detailpage. The recommendation response should also include the attribute values of the attributes `title`, `deeplink` and `description `for rendering the recommendations.
 
