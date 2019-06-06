@@ -5,7 +5,7 @@ There are several ways to integrate event reporting into the webpage. The simple
 For example: 
 
 ``` html
-<img href="http://event.yoochoose.net/ebl/00000/click/johndoe/1/100?categorypath=/a/ab/abc" width="1" height="1">
+<img href="https://event.yoochoose.net/ebl/00000/click/johndoe/1/100?categorypath=/a/ab/abc" width="1" height="1">
 ```
 
 or by javascript Image tracking
@@ -13,7 +13,7 @@ or by javascript Image tracking
 ``` js
 <script type="text/javascript">
 var img = new Image(1,1);
-img.src = "http://event.yoochoose.net/ebl/00000/click/johndoe/1/100?categorypath=/a/ab/abc";
+img.src = "https://event.yoochoose.net/ebl/00000/click/johndoe/1/100?categorypath=/a/ab/abc";
 </script>
 ```
 
